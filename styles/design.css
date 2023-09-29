@@ -1,0 +1,158 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+}
+body{
+  background-color: hsl(27, 66%, 92%);
+}
+main{
+  margin: 0 auto;
+  width: 25%;
+  padding-top: 100px;
+}
+.balance-container{
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.balance{
+  color: hsl(33, 100%, 98%);
+  font-size: 11px;
+  margin-bottom: 5px;
+}
+.total-balance{
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+}
+.right{
+  width: 30%;
+}
+.logo{
+  width: 70%;
+}
+.chart-container{
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.bar-chart-container{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.weekday-bar{
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.spending{
+  color: hsl(25, 47%, 15%);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.days-of-the-week{
+  text-align: center;
+  color:hsl(10, 79%, 65%);
+}
+.monthly-total-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.total{
+  color: hsl(28, 10%, 53%);
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.monthly-amount{
+  color: hsl(25, 47%, 15%);
+  font-size: 25px;
+  font-weight: 700;
+}
+.percentage{
+  font-size: 13px;
+  color:  hsl(25, 47%, 15%);
+}
+.duration{
+  color: hsl(28, 10%, 53%);
+  font-size: 12px;
+}
+.day-of-the-week{
+  color: hsl(28, 10%, 53%);
+  font-size: 12px;
+}
+.mon-bar, .tue-bar, .wed-bar, .thur-bar, .fri-bar, .sat-bar, .sun-bar{
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 3px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.mon-bar:hover,
+ .tue-bar:hover,
+ .thur-bar:hover,
+ .fri-bar:hover,
+ .sat-bar:hover,
+ .sun-bar:hover{
+  background-color: hsla(10, 79%, 65%, 0.733);
+}
+.mon-bar{
+  height: 40px;
+  width: 30px;
+}
+.tue-bar{
+  height: 70px;
+  width: 30px;
+}
+.wed-bar{
+  height: 100px;
+  background-color: hsl(186, 34%, 60%);
+  width: 30px;
+}
+.wed-bar:hover{
+  background-color: hsla(186, 34%, 60%, 0.726);
+}
+.thur-bar{
+  height: 65px;
+  width: 30px;
+}
+.fri-bar{
+  height: 50px;
+  width: 30px;
+}
+.sat-bar{
+  height: 80px;
+  width: 30px;
+}
+.sun-bar{
+  height: 60px;
+  width: 30px;
+}
+.tooltip{
+  margin-bottom: 5px;
+  background-color: hsl(25, 47%, 15%);
+  border-radius: 2px;
+  display: none;
+}
+.amount{
+  font-size: 11px;
+  color: white;
+  padding: 5px;
+}
+
+@media (max-width: 375px){
+  main{
+    padding-top: 90px;
+    width: 90%;
+  }
+
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/design.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Expenses chart component</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="balance-container">
+      <div class="left">
+        <p class="balance">My balance</p>
+        <p class="total-balance">$921.48</p>
+      </div>
+      <div class="right">
+        <img src="images/logo.svg" class="logo" alt="">
+      </div>
+    </div>
+    <div class="chart-container">
+      <div class="spending"> Spending - Last 7 days</div>
+      <div class="bar-chart-container">
+        <div class="weekday-bar">
+          <div class="tooltip" id="tooltip">
+            <p class="amount">17.45</p>
+          </div>
+          <div class="mon-bar" id="bar"></div>
+          <p class="day-of-the-week">mon</p>
+        </div>
+        <div class="weekday-bar">
+          <div class="tooltip" id="tooltip">
+            <p class="amount">34.91</p>
+          </div>
+          <div class="tue-bar" id="bar"></div>
+          <p class="day-of-the-week">tue</p>
+        </div>
+        <div class="weekday-bar">
+          <div class="tooltip" id="tooltip">
+            <p class="amount">52.36</p>
+          </div>
+          <div class="wed-bar" id="bar"></div>
+          <p class="day-of-the-week">wed</p>
+        </div>
+        <div class="weekday-bar"> 
+          <div class="tooltip" id="tooltip">
+            <p class="amount">31.07</p>
+          </div>
+          <div class="thur-bar" id="bar"></div>
+          <p class="day-of-the-week">thur</p>
+        </div>
+        <div class="weekday-bar"> 
+          <div class="tooltip" id="tooltip">
+            <p class="amount">23.39</p>
+          </div>
+          <div class="fri-bar" id="bar"></div>
+          <p class="day-of-the-week">fri</p>
+        </div>
+        <div class="weekday-bar">
+          <div class="tooltip" id="tooltip">
+            <p class="amount">43.28</p>
+          </div>
+          <div class="sat-bar" id="bar"></div>
+          <p class="day-of-the-week">sat</p>
+        </div>
+        <div class="weekday-bar">
+          <div class="tooltip" id="tooltip">
+            <p class="amount">25.48</p>
+          </div>
+          <div class="sun-bar" id="bar"></div>
+          <p class="day-of-the-week">sun</p>
+        </div>
+      </div>
+      <div class="monthly-total-container">
+        <div class="total-container">
+          <p class="total">Total this month</p>
+          <div class="monthly-amount">$478.33</div>
+        </div>
+        <div class="percentage-container">
+          <div class="percentage">+2.4%</div>
+          <div class="duration">from last month</div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/Pezzyace">Peace Akaehomen</a>.
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
