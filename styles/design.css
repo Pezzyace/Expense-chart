@@ -69,6 +69,7 @@ main{
   justify-content: space-between;
   align-items: center;
 }
+
 .total{
   color: hsl(28, 10%, 53%);
   font-size: 12px;
@@ -143,10 +144,13 @@ main{
   border-radius: 2px;
   display: none;
 }
+.weekday-bar:hover .tooltip{
+  display: flex;
+}
 .amount{
-  font-size: 11px;
+  font-size: 9px;
   color: white;
-  padding: 5px;
+  padding: 4px;
 }
 
 @media (max-width: 375px){
